@@ -52,9 +52,9 @@ function openModal(projectnumber) {
        
       projectName.innerText = 'Amimoy E-commerce';
       
-      projectImage.src = '/image/Amimoye-commerce.png';
+      projectImage.src = 'image/Amimoye-commerce.png';
 
-      const projectTechnoImg = ` Menggunakan : <img src='/image/Tailwind CSS.png'> <img src='/image/React.png'> <img src='/image/HTML5.png'> <img src='/image/JavaScript.png'>  `
+      const projectTechnoImg = ` Menggunakan : <img src='image/Tailwind CSS.png'> <img src='image/React.png'> <img src='image/HTML5.png'> <img src='image/JavaScript.png'>  `
       projectTechno.innerHTML = `${projectTechnoImg}`;
 
       document.getElementById('description').innerText = 'Amimoy e-commerce statis yang hanya memiliki fitur simpan produk ke keranjang , dan cari produk sesuai dengan namanya , nama Amimoy kuambil dari seseorang yang aku kagumi'
