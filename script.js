@@ -52,9 +52,9 @@ function openModal(projectnumber) {
        
       projectName.innerText = 'Amimoy E-commerce';
       
-      projectImage.src = 'image/Amimoye-commerce.png';
+      projectImage.src = 'Amimoye-commerce.png';
 
-      const projectTechnoImg = ` Menggunakan : <img src='image/Tailwind CSS.png'> <img src='image/React.png'> <img src='image/HTML5.png'> <img src='image/JavaScript.png'>  `
+      const projectTechnoImg = ` Menggunakan : <img src='Tailwind CSS.png'> <img src='React.png'> <img src='HTML5.png'> <img src='JavaScript.png'>  `
       projectTechno.innerHTML = `${projectTechnoImg}`;
 
       document.getElementById('description').innerText = 'Amimoy e-commerce statis yang hanya memiliki fitur simpan produk ke keranjang , dan cari produk sesuai dengan namanya , nama Amimoy kuambil dari seseorang yang aku kagumi'
@@ -67,9 +67,9 @@ function openModal(projectnumber) {
        
       projectName.innerText = 'Shooping note';
       
-      projectImage.src = '/image/shooping-note3.png';
+      projectImage.src = 'shooping-note3.png';
 
-      const projectTechnoImg = ` Menggunakan : <img src='/image/Tailwind CSS.png'> <img src='/image/React.png'> <img src='/image/HTML5.png'> <img src='/image/JavaScript.png'>  `
+      const projectTechnoImg = ` Menggunakan : <img src='Tailwind CSS.png'> <img src='React.png'> <img src='HTML5.png'> <img src='JavaScript.png'>  `
       projectTechno.innerHTML = `${projectTechnoImg}`;
 
       document.getElementById('description').innerText = 'Catatan belanja , anda bisa memasukkan barang yang ingin kalian beli dan tentukan jumlahnya maka tools ini akan menghitung total harga barang'

@@ -184,11 +184,11 @@ nav ul li a:hover {
 }
 
 .project-item.one{
-    background-image: url('image/Amimoye-commerce.png');
+    background-image: url('Amimoye-commerce.png');
 }
 
 .project-item.two{
-    background-image: url('image/shooping-note3.png');
+    background-image: url('shooping-note3.png');
 }
 
 .project-item>h1{
