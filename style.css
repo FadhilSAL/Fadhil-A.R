@@ -491,3 +491,120 @@ footer p {
      margin-right:22px;
      margin-left:8px;
 }
+
+
+.modal-detail{
+     height:100%;
+     background-color:rgba(0, 0, 0, 0.6);
+     width:100%;
+    position:fixed;
+   top:0;
+   left:0;
+   display:flex;
+   justify-content:center;
+   align-items:center;
+    z-index:9999;
+    box-shadow: -3px 8px 19px 6px rgba(0,0,0,0.75);
+-webkit-box-shadow: -3px 8px 19px 6px rgba(0,0,0,0.75);
+-moz-box-shadow: -3px 8px 19px 6px rgba(0,0,0,0.75);
+visibility:hidden;
+
+}
+
+
+.modal-detail.active{
+    visibility:visible;
+}
+
+.modal-detail.active .modal-content {
+    transform: scale(1); 
+    opacity:1;
+         
+    
+}
+
+
+.modal-content{
+  background-color: white;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.25);
+    width: 75%;
+    max-width: 500px;
+    position: relative;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+ 
+    gap: 15px;
+    height:500px;
+    transform: scale(0.8); 
+     transition:opacity 0.7s ease-out , transform 0.2s ease-out , visibility 1s ; 
+    opacity: 0; 
+
+}
+
+
+.modal-content>button{
+    font-size:22px;
+    color:grey;
+    background-color:transparent;
+    border:none;
+    position:absolute;
+    top:0;
+    right:5px;
+}
+
+.modal-content>button:hover{
+    cursor:pointer;
+    color:black;
+}
+
+.modal-content>img{
+    border-radius:12px;
+       max-width:400px;
+     height:320px;
+         box-shadow:2px 2px 1px rgba(0, 0, 0, 0.2)
+}
+
+.modal-content>h1{
+    font-family:sans-serif;
+    font-size:22px;
+}
+
+.modal-content>p{
+  color:black;
+  font-size:10px;
+  text-align:justify;
+   
+}
+.modal-content>.using{
+text-align:justify;
+   color:black;
+   font-size:12px;
+   display:flex;
+   align-items:center;
+
+}
+
+.modal-content>.using>img{
+    width:30px;
+    height:30px;
+    margin-left:8px;
+
+}
+
+body.modal-open > *:not(.modal-detail) {
+    /* Menerapkan blur pada semua elemen di body kecuali modal-overlay itu sendiri */
+    filter: blur(5px);
+    transition: filter 0.3s ease;
+}
+
+body.modal-open {
+    overflow: hidden;                   
+}
+
+body:not(.modal-open) > *:not(.modal-detail) {
+    filter: blur(0px); /* Hapus blur saat modal tidak aktif */
+    transition: filter 0.3s ease;
+}

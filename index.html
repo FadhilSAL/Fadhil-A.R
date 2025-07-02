@@ -3,12 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portofolio Fadhil Akbar</title>
+    <title>Fadhil Akbar</title>
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
       <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 </head>
-<body>
+<body >
 
     <header id="home">
         <nav>
@@ -98,19 +98,32 @@
         </div>
     </section>
 
+   <section class="modal-detail " id="modalDetail">
+      <section class="modal-content " id="modalContent">
+        <button id="closeModalBtn">x</button>
+                 <h1 id="projectName"></h1>
+                
+                <img   id="projectImage" >
+                <div class="using" id="projectTechnology">Menggunakan :  </div>
+                <p id="description"></p>
+      </section> 
+
+   </section>
+
+
     <section id="projects" class="projects-section">
         <div class="container">
             <h2>Proyek</h2>
             <div class="project-grid">
                 <div class="project-item one">
                    <h1>Amimoy E-commerce</h1>
-                           <button  target="_blank" class="project-link button">Lihat detail</button>
-                    <a href="#" target="_blank" class="project-link">GitHub Repo</a>
+                           <button  target="_blank" class="project-link button" id="openModalBtn" onclick="openModal(1)">Lihat detail</button>
+                    <a href="https://fadhilsal.github.io/Amimoy/" target="_blank" class="project-link">Lihat proyek</a>
                 </div>
                 <div class="project-item two">
-                   <h1>Shooping-note</h1>
-                      <button  target="_blank" class="project-link button">Lihat detail</button>
-                    <a href="#" target="_blank" class="project-link">GitHub Repo</a>
+                   <h1>Shooping note</h1>
+                      <button  target="_blank" class="project-link button" onclick="openModal(2)">Lihat detail</button>
+                    <a href="https://fadhilsal.github.io/Catatan-belanja/" target="_blank" class="project-link">Lihat proyek</a>
                 </div>
             </div>
         </div>
